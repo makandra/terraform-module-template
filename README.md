@@ -1,6 +1,6 @@
 # Terraform module template
 
-This is a template for terraform modules. It contains the required CI congiguration and `.gitignore`.
+This is a template for terraform modules. It contains the required CI configuration and `.gitignore`.
 
 # Contents
 
@@ -18,7 +18,7 @@ We have several default workflows prepared.
 
 ### checkov
 
-[checkov](https://www.checkov.io/) scans the terraform manifests for common misconfigurations. By default the root of the respository is scanned but if you have a repo with submodules (like for e.g. [makandra/terraform-aws-modules](https://github.com/makandra/terraform-aws-modules) you may want to alter the path of the github action.
+[checkov](https://www.checkov.io/) scans the terraform manifests for common misconfigurations. By default the root of the repository is scanned but if you have a repo with submodules (like for e.g. [makandra/terraform-aws-modules](https://github.com/makandra/terraform-aws-modules) you may want to alter the path of the GitHub action.
 
 ### conventional-commits
 
