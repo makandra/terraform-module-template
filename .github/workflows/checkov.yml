@@ -8,16 +8,13 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-permissions: read-all
+permissions:
+  contents: read
+  security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
 
 jobs:
   scan:
-    permissions:
-      contents: read
-      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
-
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
